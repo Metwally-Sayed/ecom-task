@@ -19,9 +19,6 @@ export async function AppHeader() {
             <span className="font-heading text-sm font-semibold tracking-[0.16em] uppercase">
               Mini Shop
             </span>
-            <span className="truncate text-sm text-muted-foreground">
-              Next.js storefront on the existing Fastify backend
-            </span>
           </div>
         </Link>
 

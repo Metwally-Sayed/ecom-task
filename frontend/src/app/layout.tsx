@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Mini Shop",
-  description: "Next.js storefront and admin app for the Mini Shop backend.",
+  description: "Shop quality products at great prices.",
 };
 
 export default function RootLayout({

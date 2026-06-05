@@ -3,7 +3,7 @@
 import { startTransition, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { Field, FieldDescription, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -84,9 +84,6 @@ export function LoginForm({ nextPath = "/account" }: LoginFormProps) {
             type="password"
             placeholder="Password123!"
           />
-          <FieldDescription>
-            Use the seeded customer or admin credentials from the backend.
-          </FieldDescription>
         </Field>
       </FieldGroup>
 

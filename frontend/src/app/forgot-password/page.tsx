@@ -19,12 +19,8 @@ export default function ForgotPasswordPage() {
             Recovery
           </p>
           <h1 className="font-heading text-4xl tracking-tight sm:text-5xl">
-            Request a password reset email.
+            Reset your password
           </h1>
-          <p className="max-w-lg text-base leading-8 text-muted-foreground">
-            This forwards directly to the backend password reset endpoint and
-            preserves the existing Supabase flow.
-          </p>
         </section>
 
         <Card className="rounded-[2rem] border border-border/70 bg-card/90 shadow-sm">

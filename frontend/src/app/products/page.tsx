@@ -47,19 +47,14 @@ export default async function ProductsPage({
             Mini Shop
           </p>
           <h1 className="font-heading text-4xl tracking-tight text-balance sm:text-5xl">
-            Browse products without waiting on the UI.
+            Browse our products
           </h1>
-          <p className="max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
-            The catalog is available, but the backend data source is currently
-            unreachable from this environment.
-          </p>
         </section>
 
         <Alert>
-          <AlertTitle>Product data is temporarily unavailable</AlertTitle>
+          <AlertTitle>Products are temporarily unavailable</AlertTitle>
           <AlertDescription>
-            The page shell is working, but the backend could not load categories
-            or products. Check the backend connection to Supabase and reload.
+            We couldn&apos;t load products right now. Please try again shortly.
           </AlertDescription>
         </Alert>
       </AppShell>
@@ -75,12 +70,8 @@ export default async function ProductsPage({
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
             <h1 className="font-heading text-4xl tracking-tight text-balance sm:text-5xl">
-              Browse products without waiting on the UI.
+              Browse our products
             </h1>
-            <p className="mt-3 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
-              Server-rendered catalog pages, URL-driven filters, and a clean
-              mobile layout that stays fast as the dataset grows.
-            </p>
           </div>
           <div className="rounded-full border border-border bg-card px-4 py-2 text-sm text-muted-foreground shadow-sm">
             {productsResult.meta.total} products

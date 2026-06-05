@@ -48,7 +48,7 @@ export default async function AdminProductsPage({
         <div>
           <h1 className="font-heading text-3xl tracking-tight">Products</h1>
           <p className="text-sm text-muted-foreground">
-            Create, update, and deactivate products from the existing backend.
+            Create, update, and remove products.
           </p>
         </div>
         <Link
