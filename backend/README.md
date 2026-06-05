@@ -135,7 +135,30 @@ npm start       # runs dist/server.js
 | Method | Path |
 |---|---|
 | GET | `/docs` — Swagger UI |
+| GET | `/docs/json` — OpenAPI JSON for Postman import |
+| GET | `/docs/yaml` — OpenAPI YAML |
 | GET | `/health` — Health check |
+
+## Postman
+
+Import the API into Postman from the OpenAPI document:
+
+1. Start the backend:
+
+```bash
+npm run dev
+```
+
+2. Open Postman and choose **Import** → **Link**.
+3. Paste:
+
+```text
+http://localhost:8080/docs/json
+```
+
+4. Import the generated Mini Shop API collection.
+
+For authenticated endpoints, first call `POST /auth/login`, copy the returned `accessToken`, and set it as a collection-level Bearer token.
 
 ## Test Credentials
 

@@ -54,6 +54,31 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 - `/admin/products`
 - `/admin/orders`
 
+## Postman
+
+The API can be imported into Postman from the backend Swagger/OpenAPI endpoint.
+
+1. Start the backend from `../backend`:
+
+```bash
+npm run dev
+```
+
+2. In Postman, choose **Import** → **Link**.
+3. Paste:
+
+```text
+http://localhost:8080/docs/json
+```
+
+4. Import the generated Mini Shop API collection.
+
+Swagger UI is available at:
+
+```text
+http://localhost:8080/docs
+```
+
 ## Seed credentials
 
 - Customer: `customer@test.com` / `Password123!`
