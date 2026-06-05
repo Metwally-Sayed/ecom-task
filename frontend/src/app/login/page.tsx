@@ -5,7 +5,6 @@ import { LoginForm } from "@/components/auth/login-form";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -32,18 +31,11 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           <h1 className="font-heading text-4xl tracking-tight sm:text-5xl">
             Sign in to place orders and track them.
           </h1>
-          <p className="max-w-lg text-base leading-8 text-muted-foreground">
-            The frontend keeps tokens in httpOnly cookies, so the browser never
-            needs to hold the JWT directly.
-          </p>
         </section>
 
         <Card className="rounded-[2rem] border border-border/70 bg-card/90 shadow-sm">
           <CardHeader>
             <CardTitle>Sign in</CardTitle>
-            <CardDescription>
-              Use the seeded customer or admin account from the existing backend.
-            </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col gap-6">
             <LoginForm nextPath={nextPath} />
